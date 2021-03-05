@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    position: relative;
+    width: 50vw;
+    margin: 25vh 25vw;
+    height: 50vh;
+    border: solid 1px brown;
+    border-radius: 20px;
+}
+img{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    animation: rouler 8s infinite;
+}
+
+@keyframes rouler{
+    0%{
+        left: 0;
+    }
+    16%{
+        left: calc(100% - 100px);
+        transform: rotate(0deg);
+    }
+    19%{
+        transform: rotate(30deg);
+    }
+    22%{
+        transform: rotate(60deg);
+    }
+    25%{
+        transform: rotate(90deg);
+        top: 0;
+    }
+    
+    41%{
+        top: calc(100% - 100px);
+        transform: rotate(90deg);
+    }
+    
+    44%{
+        transform: rotate(120deg);
+    }
+    
+    47%{
+        transform: rotate(150deg);
+    }
+    
+    50%{
+        transform: rotate(180deg);
+        top: calc(100% - 100px);
+        left: calc(100% - 100px);
+    }
+
+    66%{
+        top: calc(100% - 100px);
+        transform: rotate(180deg);
+        left:0;        
+    }
+
+    69%{
+        top: calc(100% - 100px);
+        transform: rotate(210deg);
+        left:0;        
+    }
+
+    72%{
+        top: calc(100% - 100px);
+        transform: rotate(240deg);
+        left:0;        
+    }
+
+    75%{
+        top: calc(100% - 100px);
+        transform: rotate(270deg);
+        left:0;        
+    }
+    100%{
+        transform: rotate(270deg);
+        top: 0;
+        left: 0;
+    }
+    91%{
+        transform: rotate(270deg);
+        top: 0;
+        left: 0;
+    }
+    94%{
+        transform: rotate(300deg);
+        top: 0;
+        left: 0;
+    }
+    97%{
+        transform: rotate(330deg);
+        top: 0;
+        left: 0;
+    }
+    100%{
+        transform: rotate(360deg);
+        top: 0;
+        left: 0;
+    }
+}
